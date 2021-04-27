@@ -1,6 +1,7 @@
-const fs = require("fs");
+// const fs = require("fs");
+import * as fs from "fs";
 
-const requestHandler = (req, res) => {
+export const requestHandler = (req, res) => {
   const url = req.url;
   const method = req.method;
 
@@ -42,4 +43,4 @@ const requestHandler = (req, res) => {
   }
 };
 
-exports.requestHandler = requestHandler;
+// exports.requestHandler = requestHandler;
